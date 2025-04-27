@@ -1,0 +1,1 @@
+# wechat-qr-redirect
