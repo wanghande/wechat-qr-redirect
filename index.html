@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转提示页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .message-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-container">
+        <h1>请稍等...</h1>
+        <p>即将跳转到加好友二维码页面</p>
+    </div>
+    <script>
+        // 替换为你的微信加好友二维码图片的在线链接
+        const redirectUrl = 'https://example.com/your_wechat_qr_code.png';
+        // 等待 3 秒后跳转
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, 3000);
+    </script>
+</body>
+
+</html>
